@@ -1,0 +1,120 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181619;
+    color: white;
+    font-family: Manrope;
+}
+
+/*Header & Nav*/
+header{
+    width: 100%;
+    background-color: #181619;
+    color: white;
+    font-size: 23px;
+}
+
+/*To prevent header text to disappear*/
+header::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+/*ID for Header Logo Img*/
+#headerlogo{
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+/*All nav content*/
+nav{
+    font-weight: 400;
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*div in main*/
+.divContent{
+    display: block;
+    margin: 150px 0 150px 100px; 
+}
+
+h1{
+   font-size: 5em;
+   line-height: 1em;
+   font-weight: 800;
+   margin-bottom: 0;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+main h2{
+    font-size: 2em;
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/*footer logo size and display*/
+#footerlogo{
+    float: left;
+    width: 420px;
+    margin-left: 50px;
+    padding: 42px;
+}
+
+#social-Media-Logo{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 100px 40px 40px;
+}
+
+div div img{
+    margin-right: 30px;
+}
+
+/*footer white div*/
+#divFooterTop{
+    clear: both;
+    background-color: white;
+    color: #181619;
+    width: 100%;
+}
+
+/*footer black div*/
+#divFooterBottom{
+    margin-left: 100px;
+}
+
+footer h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-top: 0;
+}

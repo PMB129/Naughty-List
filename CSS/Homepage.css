@@ -1,0 +1,220 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181619;
+    color: white;
+    font-family: Manrope;
+}
+
+/*Header & Nav*/
+header{
+    width: 100%;
+    background-color: #181619;
+    color: white;
+    font-size: 23px;
+}
+
+/*To prevent header text to disappear*/
+header::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+/*ID for Header Logo Img*/
+#headerlogo{
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+/*All nav content*/
+nav{
+    font-weight: 400;
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*div in main*/
+.divContent{
+    display: block;
+    margin: 150px 0 150px 100px; 
+}
+
+h1{
+   font-size: 5em;
+   line-height: 1em;
+   font-weight: 800;
+   margin-bottom: 0;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/*redirect button design*/
+.button{
+    background-color: #ED392C;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.titleGameList{
+    margin-left: 50%;
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.subTitleGameList{
+    margin: 0 0 0 50%;
+    font-weight: 400;
+}
+
+.contentGameList{
+    margin-top: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content:right;
+}
+
+.aboutGame{
+    position: relative;
+    left: 50%;
+}
+
+/*change bg-color to bg-img*/
+#Game1{
+    position: relative;
+    display: block;
+    margin: 70px 100px 70px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color:red;
+}
+
+/*needs to be repositioned*/
+#gameCharacter1{
+    position: absolute;
+}
+
+/*change bg-color to bg-img*/
+#Game2{
+    display: block;
+    margin: 70px 100px 70px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color:orange;
+}
+
+/*needs to be repositioned*/
+#gameCharacter2{
+    position: absolute;
+}
+
+/*change bg-color to bg-img*/
+#Game3{
+    display: block;
+    margin: 70px 100px 70px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color:yellow;
+}
+
+/*needs to be repositioned*/
+#gameCharacter3{
+    position: absolute;
+}
+
+/*change bg-color to bg-img*/
+#Game4{
+    display: block;
+    margin: 70px 100px 70px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color:green;
+}
+
+/*needs to be repositioned*/
+#gameCharacter4{
+    position: absolute;
+}
+
+/*change bg-color to bg-img*/
+#Game5{
+    display: block;
+    margin: 70px 100px 70px 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color:blue;
+}
+
+/*needs to be repositioned*/
+#gameCharacter5{
+    position: absolute;
+}
+
+/*footer logo size and display*/
+#footerlogo{
+    float: left;
+    width: 420px;
+    margin-left: 50px;
+    padding: 42px;
+}
+
+#social-Media-Logo{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 100px 40px 40px;
+}
+
+div div img{
+    margin-right: 30px;
+}
+
+/*footer white div*/
+#divFooterTop{
+    clear: both;
+    background-color: white;
+    color: #181619;
+    width: 100%;
+}
+
+/*footer black div*/
+#divFooterBottom{
+    margin-left: 100px;
+}
+
+footer h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-top: 0;
+}
+
