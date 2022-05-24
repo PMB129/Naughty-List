@@ -10,9 +10,10 @@ body{
 /*Header & Nav*/
 header{
     width: 100%;
+    height: 98.77px;
     background-color: #181619;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /*To prevent header text to disappear*/
@@ -25,16 +26,18 @@ header::after{
 /*ID for Header Logo Img*/
 #headerlogo{
     float: left;
-    width: 300px;
+    width: 250px;
     margin-left: 30px;
     padding: 20px;
 }
 
 /*All nav content*/
 nav{
-    font-weight: 400;
+    font-weight: 300;
     float: right;
-    margin-right: 50px;
+    margin-right: 80px;
+
+    display: flex;
 }
 
 nav ul{
@@ -46,7 +49,8 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 50px;
-    padding-top: 25px;
+    margin-top: 35px;
+    
 }
 
 nav a{
@@ -56,144 +60,266 @@ nav a{
 
 /*div in main*/
 .divContent{
-    display: block;
-    margin: 150px 0 150px 100px; 
+    display: flex;
+    padding: 48px 0px 48px 10%;
 }
 
-h1{
-   font-size: 5em;
-   line-height: 1em;
-   font-weight: 800;
-   margin-bottom: 0;
+h1 {
+    font-size: 4.3em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0;
 }
 
 p{
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 1.56em;
+    font-weight: 300;
+    margin: 15px 0 20px 0;
+}
+
+/* Hero Image and Content */
+.hero-image {
+    background-image: url("/IMG/HomepageHero.png");
+    box-sizing: border-box;
+    box-shadow: inset 0px -75px 50px 2px #181619;    
+
+    height: 95vh;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    position: absolute;
+
+    width: 658.32px;
+
+    left: 8%;
+    top: 16%;
+
+    text-shadow: 0px 1.19405px 2.0896px rgba(0, 0, 0, 0.25);
 }
 
 /*redirect button design*/
 .button{
     background-color: #ED392C;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
+
+    width: auto;
+
+    padding: 8px 17px;
+    font-weight: 600;
+    border-radius: 7px;
+    font-size: 23px;
     color: white;
     text-decoration: none;
 }
 
+/* Naughty Dog Description */
+.divNaughtyDog {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 54px;
 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.NaughtyDogImage {
+    width: 603.21px;
+    height: 576.08px;
+}
+
+.NaughtyDogContent {
+    width: 557.01px;
+}
+
+.subheaders {
+    font-size: 4.00em;
+    line-height: 1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.subcontent {
+    font-size: 22.77px;
+    font-weight: 300;
+}
+
+/* Game Card Stylings */
 .titleGameList{
-    margin-left: 50%;
-    font-size: 75px;
     font-weight: 800;
+    font-size: 4.00em;
 }
 
 .subTitleGameList{
-    margin: 0 0 0 50%;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 33.95px;
+    margin: 0;
+    letter-spacing: 0.16em;
 }
 
 .contentGameList{
-    margin-top: 0;
-    padding-top: 10px;
+    font-size: 22.77px;
+}
+
+.divNaughtyList {
     display: flex;
-    justify-content:right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 48px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+
+.GameCharImg {
+    width: auto;
+    height: 410px;
+
+    margin-top: 15px;
+}
+
+.GameDets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 657.9px;
+    height: 300.12px;
 }
 
 .aboutGame{
+    background-color: #ED392C;
+
+    width: 308px;
+
+    padding: 8px 17px;
+    font-weight: 600;
+    border-radius: 7px;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Individual Game Cards */
+#Game_TLOU1 {
     position: relative;
-    left: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1216.6px;
+    height: 425.18px;
+    
+    border-radius: 20px;
+        
+    background-image: url("../IMG/BG_TLOU1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*change bg-color to bg-img*/
-#Game1{
+#Game_TLOU2 {
     position: relative;
-    display: block;
-    margin: 70px 100px 70px 0;
-    padding: 50px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1216.6px;
+    height: 425.18px;
+    
     border-radius: 20px;
-    background-color:red;
+        
+    background-image: url("../IMG/BG_TLOU2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*needs to be repositioned*/
-#gameCharacter1{
-    position: absolute;
-}
-
-/*change bg-color to bg-img*/
-#Game2{
-    display: block;
-    margin: 70px 100px 70px 0;
-    padding: 50px;
+#Game_Uncharted4 {
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1216.6px;
+    height: 425.18px;
+    
     border-radius: 20px;
-    background-color:orange;
+        
+    background-image: url("../IMG/BG_Uncharted4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*needs to be repositioned*/
-#gameCharacter2{
-    position: absolute;
-}
-
-/*change bg-color to bg-img*/
-#Game3{
-    display: block;
-    margin: 70px 100px 70px 0;
-    padding: 50px;
+#Game_Uncharted3 {
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1216.6px;
+    height: 425.18px;
+    
     border-radius: 20px;
-    background-color:yellow;
+        
+    background-image: url("../IMG/BG_Uncharted3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*needs to be repositioned*/
-#gameCharacter3{
-    position: absolute;
-}
-
-/*change bg-color to bg-img*/
-#Game4{
-    display: block;
-    margin: 70px 100px 70px 0;
-    padding: 50px;
+#Game_Uncharted2 {
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 1216.6px;
+    height: 425.18px;
+    
     border-radius: 20px;
-    background-color:green;
-}
-
-/*needs to be repositioned*/
-#gameCharacter4{
-    position: absolute;
-}
-
-/*change bg-color to bg-img*/
-#Game5{
-    display: block;
-    margin: 70px 100px 70px 0;
-    padding: 50px;
-    border-radius: 20px;
-    background-color:blue;
-}
-
-/*needs to be repositioned*/
-#gameCharacter5{
-    position: absolute;
+        
+    background-image: url("../IMG/BG_Uncharted2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*footer logo size and display*/
 #footerlogo{
     float: left;
-    width: 420px;
+    width: 346.75px;
+    height: 82px;
     margin-left: 50px;
-    padding: 42px;
+    padding: 10px   42px;
 }
 
 #social-Media-Logo{
     display: flex;
+
+    flex-direction: row;
+    gap: 30px;
     justify-content: flex-end;
     padding: 40px 100px 40px 40px;
-}
-
-div div img{
-    margin-right: 30px;
 }
 
 /*footer white div*/
@@ -202,19 +328,26 @@ div div img{
     background-color: white;
     color: #181619;
     width: 100%;
+    height: 141.16px;;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*footer black div*/
 #divFooterBottom{
-    margin-left: 100px;
+    margin: 0 0 30px 100px;
+    height: 50px;
 }
 
 footer h2{
-    font-size: 40px;
+    font-size: 23.78px;
     margin-bottom: 0;
 }
 
 footer p{
+    font-size: 17.56px;
     margin-top: 0;
 }
 
