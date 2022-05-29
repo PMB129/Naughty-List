@@ -9,6 +9,7 @@ body{
 
 /*Header & Nav*/
 header{
+    margin: 0;
     width: 100%;
     background-color: #181619;
     color: white;
@@ -26,57 +27,143 @@ header::after{
 #headerlogo{
     float: left;
     width: 300px;
-    margin-left: 30px;
-    padding: 20px;
+    padding: 25px 0 0 50px;
 }
 
 /*All nav content*/
 nav{
     font-weight: 400;
-    float: right;
     margin-right: 50px;
+    
 }
 
 nav ul{
+    background-color: #181619;
     margin: 0;
     padding: 0;
+    float: right;
     list-style: none;
 }
 
 nav li{
+    position: relative;
     display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    padding: 25px;
 }
 
-nav a{
+nav ul li a{
+    display: block;
     color: white;
+    line-height: 60px;
     text-decoration: none;
 }
 
-/*div in main*/
-.divContent{
-    display: block;
-    margin: 150px 0 150px 100px; 
+nav ul li:hover{
+    background-color: #ED392C;
 }
 
-h1{
+nav ul ul{
+    position: absolute;
+    display: none;
+    top: 110px;
+    left: 0;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 999;
+}
+
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#photobanner{
+    position: relative;
+    background-image: url("../IMG/test2.png");
+    padding: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photobanner::after{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #181619 1%, rgba(23,21,21,0) 50%);
+    z-index: 1;
+}
+
+#title-Photobanner{
    font-size: 5em;
    line-height: 1em;
    font-weight: 800;
-   margin-bottom: 0;
+   margin: 0;
 }
 
-p{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-main h2{
-    font-size: 2em;
-    margin-top: 0;
+#subtitle-Photobanner{
+    font-size: 3em;
+    margin-top: 1%;
     font-weight: 300;
-    margin-bottom: 0;
+}
+
+
+.divContent{
+    display: block;
+    margin: 50px 10% 80px 10%; 
+}
+
+.title-Creator{
+
+    color: #ED392C;
+    font-size: 5em; 
+    padding: 0;
+    margin: 0; 
+}
+
+.subtitle-Creator{
+    font-size: 3em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts{
+    width: 300px;
+    length: auto;
+    display: inline-block;
+    background-color: white;
+    padding: 30px;
+    margin: 30px 30px 0 0;
+}
+
+.socmedLogo{
+    width: 65px;
+}
+.socmed{
+    margin: 0;
+    padding: 0;
+    color: #ED392C;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.contact-det{
+    margin: 0;
+    color: #222222;
+    font-size: 29px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1px;
 }
 
 /*footer logo size and display*/

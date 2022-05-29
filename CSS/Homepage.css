@@ -9,6 +9,7 @@ body{
 
 /*Header & Nav*/
 header{
+    margin: 0;
     width: 100%;
     background-color: #181619;
     color: white;
@@ -26,32 +27,62 @@ header::after{
 #headerlogo{
     float: left;
     width: 300px;
-    margin-left: 30px;
-    padding: 20px;
+    padding: 25px 0 0 50px;
 }
 
 /*All nav content*/
 nav{
     font-weight: 400;
-    float: right;
     margin-right: 50px;
+    
 }
 
 nav ul{
+    background-color: #181619;
     margin: 0;
     padding: 0;
+    float: right;
     list-style: none;
 }
 
 nav li{
+    position: relative;
     display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    padding: 25px;
 }
 
-nav a{
+nav ul li a{
+    display: block;
     color: white;
+    line-height: 60px;
     text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: #ED392C;
+}
+
+nav ul ul{
+    position: absolute;
+    display: none;
+    top: 110px;
+    left: 0;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 999;
+}
+
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
 }
 
 /*div in main*/
@@ -82,7 +113,6 @@ p{
     color: white;
     text-decoration: none;
 }
-
 
 .titleGameList{
     margin-left: 50%;
