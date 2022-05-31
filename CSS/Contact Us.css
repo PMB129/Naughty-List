@@ -9,10 +9,11 @@ body{
 
 /*Header & Nav*/
 header{
+    margin: 0;
     width: 100%;
     background-color: #181619;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /*To prevent header text to disappear*/
@@ -25,76 +26,208 @@ header::after{
 /*ID for Header Logo Img*/
 #headerlogo{
     float: left;
-    width: 300px;
+
     margin-left: 30px;
+    width: 275px;
+
     padding: 20px;
 }
 
 /*All nav content*/
 nav{
-    font-weight: 400;
+    font-weight: 300;
     float: right;
-    margin-right: 50px;
+    margin-right: 80px;
+
+    display: flex;
 }
 
 nav ul{
+    background-color: #181619;
     margin: 0;
     padding: 0;
+    float: right;
     list-style: none;
 }
 
 nav li{
+    position: relative;
     display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    padding: 23px;
 }
 
-nav a{
+nav ul li a{
+    display: block;
     color: white;
+    line-height: 60px;
     text-decoration: none;
 }
 
-/*div in main*/
-.divContent{
+nav ul li:hover{
+    background-color: #ED392C;
+}
+
+nav ul ul{
+    position: absolute;
+    display: none;
+    top: 110px;
+    left: 0;
+}
+
+nav ul li:hover > ul{
     display: block;
-    margin: 150px 0 150px 100px; 
+    z-index: 999;
 }
 
-h1{
-   font-size: 5em;
-   line-height: 1em;
-   font-weight: 800;
-   margin-bottom: 0;
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
 }
 
-p{
-    font-size: 25px;
-    font-weight: 400;
+/* PhotoBanner */
+.hero-image{
+    position: relative;
+    background-image: url("../IMG/ContactHero.png");
+    
+    box-sizing: border-box;
+    box-shadow: inset 0px -75px 50px 2px #181619;    
+
+    height: 75vh;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
 }
 
-main h2{
-    font-size: 2em;
-    margin-top: 0;
+.hero-content {
+    position: absolute;
+
+    width: 658.32px;
+
+    left: 8%;
+    top: 25%;
+
+    text-shadow: 0px 1.19405px 2.0896px rgba(0, 0, 0, 0.25);
+}
+
+#banner-title {
+    font-size: 4.3em;
+    line-height: 1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#banner-subtitle {
+    font-size: 2.5em;
+    line-height: 1em;
     font-weight: 300;
-    margin-bottom: 0;
+    margin: 0;
+}
+
+/* Main Content */
+.divContent{
+    margin: 40px 0;
+}
+
+.title-Creator{
+    color: #ED392C;
+
+    font-size: 4.3em;
+    font-weight: 800px;
+    letter-spacing: -0.03em;
+    
+    padding: 0;
+    margin: 0; 
+}
+
+.subtitle-Creator{
+    font-size: 2.7em;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Contact Lists*/
+.title-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.contact-lists {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0;
+    gap: 30px;
+}
+
+.contacts{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+}
+
+.socmedLogo{
+    width: 65px;
+}
+
+.socmed{
+    margin: 0;
+    padding: 0;
+    color: #ED392C;
+
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.contact-det{
+    margin: 0;
+    color: #222222;
+
+    font-size: 29px;
+    text-decoration: underline;
+    letter-spacing: 0.01em;
+
+    text-decoration-thickness: 0.1px;
 }
 
 /*footer logo size and display*/
 #footerlogo{
     float: left;
-    width: 420px;
+    width: 346.75px;
+    height: 82px;
     margin-left: 50px;
-    padding: 42px;
+    padding: 10px 42px;
 }
 
 #social-Media-Logo{
-    display: flex;
-    justify-content: flex-end;
-    padding: 40px 100px 40px 40px;
-}
+    padding: 80px;
 
-div div img{
-    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
 }
 
 /*footer white div*/
@@ -103,18 +236,27 @@ div div img{
     background-color: white;
     color: #181619;
     width: 100%;
+    height: 141.16px;;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*footer black div*/
 #divFooterBottom{
-    margin-left: 100px;
+    display: block;
+
+    margin: 0 0 30px 100px;
+    height: 50px;
 }
 
 footer h2{
-    font-size: 40px;
+    font-size: 23.78px;
     margin-bottom: 0;
 }
 
 footer p{
+    font-size: 17.56px;
     margin-top: 0;
 }

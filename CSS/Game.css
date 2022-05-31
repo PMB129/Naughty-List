@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181619;
+    color: white;
+    font-family: Manrope;
+}
+
+/*Header & Nav*/
+header{
+    margin: 0;
+    width: 100%;
+    background-color: #181619;
+    color: white;
+    font-size: 23px;
+}
+
+/*To prevent header text to disappear*/
+header::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+/*ID for Header Logo Img*/
+#headerlogo{
+    float: left;
+    width: 300px;
+    padding: 25px 0 0 50px;
+}
+
+/*All nav content*/
+nav{
+    font-weight: 400;
+    margin-right: 50px;
+    
+}
+
+nav ul{
+    background-color: #181619;
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+}
+
+nav li{
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: #ED392C;
+}
+
+nav ul ul{
+    position: absolute;
+    display: none;
+    top: 110px;
+    left: 0;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 999;
+}
+
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+/*footer logo size and display*/
+#footerlogo{
+    float: left;
+    width: 420px;
+    margin-left: 50px;
+    padding: 42px;
+}
+
+#social-Media-Logo{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 100px 40px 40px;
+}
+
+div div img{
+    margin-right: 30px;
+}
+
+/*footer white div*/
+#divFooterTop{
+    background-color: white;
+}
+
+/*footer black div*/
+#divFooterBottom{
+    margin: 0 100px 40px 100px;
+}
+
+footer h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-top: 0;
+    font-size: 25px;
+}
