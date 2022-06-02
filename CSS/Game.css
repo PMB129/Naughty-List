@@ -1,5 +1,4 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #181619;
@@ -17,148 +16,137 @@ header {
 }
 
 /*Header & Nav*/
-header{
-    margin: 0;
-    width: 100%;
-    background-color: #181619;
-    color: white;
-    font-size: 20px;
+header {
+  margin: 0;
+  width: 100%;
+  background-color: #181619;
+  color: white;
+  font-size: 20px;
 }
 
 /*To prevent header text to disappear*/
-header::after{
-    content: ' ';
-    display: table;
-    clear: both;
+header::after {
+  content: ' ';
+  display: table;
+  clear: both;
 }
 
 /*ID for Header Logo Img*/
-#headerlogo{
-    float: left;
+#headerlogo {
+  float: left;
 
-    margin-left: 30px;
-    width: 275px;
+  margin-left: 30px;
+  width: 275px;
 
-    padding: 20px;
+  padding: 20px;
 }
 
 /*All nav content*/
-nav{
-    font-weight: 300;
-    float: right;
-    margin-right: 80px;
+nav {
+  font-weight: 300;
+  float: right;
+  margin-right: 80px;
 
-    display: flex;
+  display: flex;
 }
 
-nav ul{
-    background-color: #181619;
-    margin: 0;
-    padding: 0;
-    float: right;
-    list-style: none;
-}
-
-nav li{
-    position: relative;
-    display: inline-block;
-    padding: 23px;
-}
-
-nav ul li a{
-    display: block;
-    color: white;
-    line-height: 60px;
-    text-decoration: none;
-}
-
-nav ul li:hover{
-    background-color: #ED392C;
-}
-
-nav ul ul{
-    position: absolute;
-    display: none;
-    top: 105px;
-    left: 0;
-}
-
-nav ul li:hover > ul{
-    display: block;
-    z-index: 999;
-}
-
-nav ul ul li{
-    width: 180px;
-    float: none;
-    display: list-item;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 20px;
-}
-
-#photobanner {
-  position: relative;
-  background-image: url("../IMG/The Last of Us/TLOU_Photobanner.png");
-  padding: 10%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#photobanner::after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(360deg, #181619 1%, rgba(23, 21, 21, 0) 45%);
-  z-index: 1;
-}
-
-#content {
-  display: grid;
-  grid-template-columns: auto 500px;
-  grid-template-rows: 300px 150px;
-  grid-template-areas: 
-  char title 
-  char detail;
+nav ul {
+  background-color: #181619;
   margin: 0;
   padding: 0;
+  float: right;
+  list-style: none;
 }
 
+nav li {
+  position: relative;
+  display: inline-block;
+  padding: 23px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #ED392C;
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+  top: 105px;
+  left: 0;
+}
+
+nav ul li:hover>ul {
+  display: block;
+  z-index: 999;
+}
+
+nav ul ul li {
+  width: 180px;
+  float: none;
+  display: list-item;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url("../IMG/The Last of Us/TLOU_Photobanner.png");
+
+  box-sizing: border-box;
+  box-shadow: inset 0px -45px 50px 2px #181619;
+
+  height: 90vh;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  position: absolute;
+
+  width: 658.32px;
+
+  left: 8%;
+  top: 20%;
+
+  text-shadow: 0px 1.19405px 2.0896px rgba(0, 0, 0, 0.25);
+}
 
 #title-Photobanner {
-  grid-area: title;
   font-size: 6em;
+
   line-height: 1em;
-  font-weight: 800;
+  font-weight: bold;
+
   margin: 0;
-  transform: translate(-95px, -45px);
+  padding: 0;
+
+  text-align: left;
+
 }
 
-#subtitle-Photobanner {
-  grid-area: subtitle;
-  font-size: 3em;
-  margin-top: 1%;
-  font-weight: 300;
-}
-
-#character {
+.display-content {
   position: relative;
-  width: auto;
-  height: 45vw;
-  transform: translate(-95px, -95px);
-}
+  left: 40vw;
 
-#detail{
-  grid-area: detail;
-  font-size: 25px;
-  transform: translate(-95px, -45px);
-  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: 5vw;
+
+  text-align: justify;
 }
 
 .divContent {
@@ -182,12 +170,13 @@ nav ul ul li{
   font-weight: 300;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  
+
 }
 
 p {
   font-size: 25px;
   font-weight: 300;
+  text-align: justify;
 }
 
 
@@ -241,7 +230,7 @@ p {
 
 
 /*footer logo size and display*/
-#footerlogo{
+#footerlogo {
   float: left;
   width: 346.75px;
   height: 82px;
@@ -249,7 +238,7 @@ p {
   padding: 10px 42px;
 }
 
-#social-Media-Logo{
+#social-Media-Logo {
   padding: 80px;
 
   display: flex;
@@ -259,12 +248,13 @@ p {
 }
 
 /*footer white div*/
-#divFooterTop{
+#divFooterTop {
   clear: both;
   background-color: white;
   color: #181619;
   width: 100%;
-  height: 141.16px;;
+  height: 141.16px;
+  ;
 
   display: flex;
   align-items: center;
@@ -272,19 +262,19 @@ p {
 }
 
 /*footer black div*/
-#divFooterBottom{
+#divFooterBottom {
   display: block;
 
   margin: 0 0 30px 100px;
   height: 50px;
 }
 
-footer h2{
+footer h2 {
   font-size: 23.78px;
   margin-bottom: 0;
 }
 
-footer p{
+footer p {
   font-size: 17.56px;
   margin-top: 0;
 }
