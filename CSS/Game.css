@@ -100,7 +100,7 @@ nav ul ul li {
 
 .hero-image {
   position: relative;
-  background-image: url("../IMG/The Last of Us/TLOU_Photobanner.png");
+  background-image: url("../IMG/The Last Of us/TLOU_Photobanner.png");
 
   box-sizing: border-box;
   box-shadow: inset 0px -45px 50px 2px #181619;
@@ -179,7 +179,14 @@ p {
   text-align: justify;
 }
 
+#awards{
+  
+}
 
+.awards-content{
+  background-color: white;
+  margin: 50px;
+}
 
 .GamePlayConatiner {
   justify-content: center;

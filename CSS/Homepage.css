@@ -104,6 +104,7 @@ h1 {
 }
 
 p{
+    text-align: justify;
     font-size: 1.56em;
     font-weight: 300;
     margin: 15px 0 20px 0;
@@ -111,7 +112,7 @@ p{
 
 /* Hero Image and Content */
 .hero-image {
-    background-image: url("/IMG/HomepageHero.png");
+    background-image: url("/IMG/Homepage/HomepageHero.png");
     box-sizing: border-box;
     box-shadow: inset 0px -75px 50px 2px #181619;    
 
@@ -183,6 +184,7 @@ p{
 }
 
 .subcontent {
+    text-align: justify;
     font-size: 22.77px;
     font-weight: 300;
 }
@@ -202,6 +204,7 @@ p{
 
 .contentGameList{
     font-size: 22.77px;
+    text-align: justify;
 }
 
 .divNaughtyList {
@@ -259,7 +262,7 @@ p{
     
     border-radius: 20px;
         
-    background-image: url("../IMG/BG_TLOU1.png");
+    background-image: url("../IMG/Homepage/BG_TLOU1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -277,7 +280,7 @@ p{
     
     border-radius: 20px;
         
-    background-image: url("../IMG/BG_TLOU2.png");
+    background-image: url("../IMG/Homepage/BG_TLOU2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -295,7 +298,7 @@ p{
     
     border-radius: 20px;
         
-    background-image: url("../IMG/BG_Uncharted4.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -313,7 +316,7 @@ p{
     
     border-radius: 20px;
         
-    background-image: url("../IMG/BG_Uncharted3.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -331,7 +334,7 @@ p{
     
     border-radius: 20px;
         
-    background-image: url("../IMG/BG_Uncharted2.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
