@@ -6,6 +6,14 @@ body {
   font-family: Manrope;
 }
 
+:root{
+  --TLOU1: url("../IMG/The Last Of us/TLOU_Photobanner.png");
+  --TLOU2: url("../IMG/The Last Of us II/TLOU2_Photobanner.png");
+  --U4: url("../IMG/Uncharted 4/U4ATE.png");
+  --U3: url("../IMG/Uncharted 3/U3DD.png");
+  --U2: url("../IMG/Uncharted 2/U2AT.png");
+}
+
 /*Header & Nav*/
 header {
   margin: 0;
@@ -99,9 +107,6 @@ nav ul ul li {
 }
 
 .hero-image {
-  position: relative;
-  background-image: url("../IMG/The Last Of us/TLOU_Photobanner.png");
-
   box-sizing: border-box;
   box-shadow: inset 0px -45px 50px 2px #181619;
 
@@ -111,6 +116,31 @@ nav ul ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#hero-image-TLOU1{
+  position: relative;
+  background-image: var(--TLOU1);
+}
+
+#hero-image-TLOU2{
+  position: relative;
+  background-image: var(--TLOU2);
+}
+
+#hero-image-U4{
+  position: relative;
+  background-image: var(--U4);
+}
+
+#hero-image-U3{
+  position: relative;
+  background-image: var(--U3);
+}
+
+#hero-image-U2{
+  position: relative;
+  background-image: var(--U2);
 }
 
 .hero-content {
@@ -124,7 +154,7 @@ nav ul ul li {
   text-shadow: 0px 1.19405px 2.0896px rgba(0, 0, 0, 0.25);
 }
 
-#title-Photobanner {
+#title-Photobanner-TLOU{
   font-size: 6em;
 
   line-height: 1em;
@@ -135,6 +165,32 @@ nav ul ul li {
 
   text-align: left;
 
+}
+
+#title-Photobanner-U{
+  font-size: 4.9em;
+
+  line-height: 1em;
+  font-weight: bold;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+}
+
+#subtitle-photobanner{
+  font-size: 2em;
+
+  line-height: 1em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
 }
 
 .display-content {
@@ -158,7 +214,8 @@ nav ul ul li {
 .title {
   text-align: left;
   color: #ED392C;
-  font-size: 4.5em;
+  font-size: 3.5em;
+  font-weight: 900;
   padding: 0;
   margin: 0;
 }
@@ -166,7 +223,7 @@ nav ul ul li {
 .subtitle {
   line-height: 25px;
   text-align: left;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 300;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
@@ -179,13 +236,78 @@ p {
   text-align: justify;
 }
 
+#characters{
+  display: inline-block;
+}
+
+.char-content{
+  display: inline-block;
+  background-color: white;
+  border-radius: 15px;
+
+  width: clamp(250px, 36vw, 50%);
+
+  padding: 30px;
+  margin: 10px;
+}
+
+.char-pic{
+  width: clamp(150px, 200px, 30%);
+  height: auto;
+
+  float: left;
+  clear: both;
+
+  padding: 0;
+  margin-right: 30px;
+
+  border-radius: 10px;
+}
+
+.char-name{
+  color: #ED392C;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.char-desc{
+  color: #181619;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
 #awards{
-  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.awards-title{
+  color: #ED392C;
+  font-weight: 500;
 }
 
 .awards-content{
   background-color: white;
-  margin: 50px;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 30px 45px 25px 45px;
+}
+
+.awards-title{
+  color: #ED392C;
+  font-weight: 800;
+  font-size: 1.9em;
+  margin: 0;
+}
+
+.awards-desc{
+  color: #181619;
+  font-weight: 400;
 }
 
 .GamePlayConatiner {
@@ -233,8 +355,29 @@ p {
   margin: 30px 0;
 }
 
+.lightbox{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+.lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 5%;
+  border-radius: 0;
+}
 
+.lightbox:target{
+  outline: none;
+  display: block;
+}
 
 /*footer logo size and display*/
 #footerlogo {
