@@ -70,7 +70,7 @@ nav ul li:hover{
 nav ul ul{
     position: absolute;
     display: none;
-    top: 105px;
+    top: clamp(105px, 20% ,110px);
     left: 0;
 }
 
