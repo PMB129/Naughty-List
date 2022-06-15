@@ -316,6 +316,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .awards-title {
@@ -326,7 +327,7 @@ p {
 .awards-content {
   background-color: white;
   border-radius: 15px;
-  margin: 30px 15px;
+  margin: 10px;
   width: 30vw;
   padding: 30px 45px 25px 45px;
 }
