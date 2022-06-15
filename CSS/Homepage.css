@@ -33,12 +33,21 @@ header::after {
 }
 
 /*All nav content*/
-nav {
+/* nav {
     font-weight: 300;
     float: right;
     margin-right: 80px;
 
     display: flex;
+    flex-direction: row;
+} */
+
+.menu {
+    font-weight: 300;
+    margin-right: 80px;
+
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul {
@@ -66,11 +75,20 @@ nav ul li:hover {
     background-color: #ED392C;
 }
 
-nav ul ul {
+/* nav ul ul {
     position: absolute;
     display: none;
     top: clamp(105px, 20%, 110px);
     left: 0;
+} */
+
+.submenu {
+
+    position: absolute;
+    display: none;
+    top: clamp(105px, 20%, 110px);
+    left: 0;
+    white-space: nowrap;
 }
 
 nav ul li:hover>ul {
@@ -111,7 +129,7 @@ p {
 
 /* Hero Image and Content */
 .hero-image {
-    background-image: url("../IMG/Homepage/HomepageHero.png");
+    background-image: url("/IMG/Homepage/HomepageHero.png");
     box-sizing: border-box;
     box-shadow: inset 0px -75px 50px 2px #181619;
 
@@ -138,7 +156,7 @@ p {
     text-shadow: 0px 1.19405px 2.0896px rgba(0, 0, 0, 0.25);
 }
 
-.hero-content div{
+.hero-content div {
     margin-top: 3.5em;
 }
 
@@ -235,7 +253,7 @@ p {
     justify-content: center;
 
     width: 657.9px;
-        height: 300.12px;
+    height: 300.12px;
 }
 
 .aboutGame {
@@ -265,7 +283,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("../IMG/Homepage/BG_TLOU1.png");
+    background-image: url("/IMG/Homepage/BG_TLOU1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -283,7 +301,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("../IMG/Homepage/BG_TLOU2.png");
+    background-image: url("/IMG/Homepage/BG_TLOU2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -301,7 +319,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("../IMG/Homepage/BG_Uncharted4.png");
+    background-image: url("/IMG/Homepage/BG_Uncharted4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -319,7 +337,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("../IMG/Homepage/BG_Uncharted3.png");
+    background-image: url("/IMG/Homepage/BG_Uncharted3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -337,7 +355,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("../IMG/Homepage/BG_Uncharted2.png");
+    background-image: url("/IMG/Homepage/BG_Uncharted2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

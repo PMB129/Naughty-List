@@ -93,7 +93,7 @@ nav ul ul li{
 /* PhotoBanner */
 .hero-image{
     position: relative;
-    background-image: url("../IMG/Contact Us/ContactHero.png");
+    background-image: url("/IMG/Contact Us/ContactHero.png");
     
     box-sizing: border-box;
     box-shadow: inset 0px -75px 50px 2px #181619;    
