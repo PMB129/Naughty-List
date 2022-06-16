@@ -70,7 +70,7 @@ nav ul li:hover{
 nav ul ul{
     position: absolute;
     display: none;
-    top: 110px;
+    top: clamp(105px, 20% ,110px);
     left: 0;
 }
 
@@ -93,7 +93,7 @@ nav ul ul li{
 /* PhotoBanner */
 .hero-image{
     position: relative;
-    background-image: url("../IMG/ContactHero.png");
+    background-image: url("/IMG/Contact Us/ContactHero.png");
     
     box-sizing: border-box;
     box-shadow: inset 0px -75px 50px 2px #181619;    
@@ -185,6 +185,10 @@ nav ul ul li{
     width: 300px;
     background-color: white;
     padding: 30px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .socmedLogo{

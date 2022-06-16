@@ -1,213 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Homepage
-        </title>
- 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="../CSS/Homepage.css">
+<head>
+    <title>
+        Homepage
+    </title>
 
-        <link rel="icon" href="../IMG/Favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-        <meta charset="utf-8"/>
+    <link rel="stylesheet" href="/CSS/Homepage.css">
 
-    </head>
-    <body>
+    <link rel="icon" href="/IMG/Favicon.svg">
 
-        <header>
-            <div class="dropdown">
+    <meta charset="utf-8" />
 
-                <img src="../IMG/Logo.png" alt="logo" id="headerlogo">
-                <nav>
-                    <ul>
-                        <li><a href="../HTML/Homepage.html">Home</a></li>
-                        <li><a href="#">Games</a>
-                            <ul>
-                                <li><a href="GameOne.html">The Last of Us</a></li>
-                                <li><a href="#">The Last of Us II</a></li>
-                                <li><a href="#">Uncharted 4</a></li>
-                                <li><a href="#">Uncharted 3</a></li>
-                                <li><a href="#">Uncharted 2</a></li>
-                            </ul>
-                        </li> 
-                        <li><a href="../HTML/About Us.html">About Us</a></li>
-                        <li><a href="../HTML/Contact Us.html">Contact Us</a></li>
+</head>
+
+<body>
+
+    <header>
+        <label for="input-hamburger" class="hamburger"></label>
+            <input type="checkbox" id="input-hamburger" hidden>
+            <div><a href="/HTML/Homepage.html">
+                <img src="/IMG/Header and footer/Logo.png" alt="logo" id="headerlogo">
+            </a></div>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="/HTML/Homepage.html">Home</a></li>
+                <li><a href="#" class="has-dropdown">Games</a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/TLOU1.html">The Last of Us</a></li>
+                        <li><a href="/HTML/TLOU2.html">The Last of Us II</a></li>
+                        <li><a href="/HTML/U4TE.html">Uncharted 4</a></li>
+                        <li><a href="/HTML/U3DD.html">Uncharted 3</a></li>
+                        <li><a href="/HTML/U2AT.html">Uncharted 2</a></li>
                     </ul>
-                </nav>
-    
+                </li>
+                <li><a href="/HTML/About Us.html">About Us</a></li>
+                <li><a href="/HTML/Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <div class="hero-content">
+                <h1> Welcome to <br> The Naughty List</h1>
+
+                <p>
+                    Bringing you the list of the five most popular games of
+                    one of the most successful and prolific game development studios
+                    in the world, Naughty Dog. <br> Explore and find more details about our
+                    naughty list.
+                </p>
+
+                <div>
+                    <a href="/HTML/About Us.html#naughty-list-creators" class="button">More About Us</a>
+                </div>
+                
             </div>
-        </header>
+        </div>
 
-        <main>
-            <div class="hero-image">
-                <div class="hero-content">
-                    <h1> Welcome to <br> The Naughty List</h1>
+        <div class="divNaughtyDog">
 
-                    <p> 
-                        Bringing you the list of the five most popular games of
-                        one of the most successful and prolific game development studios
-                        in the world, Naughty Dog. <br> Explore and find more details about our
-                        naughty list.
+            <img class="NaughtyDogImage" src="/IMG/Homepage/NaughtyDogImg.png"
+                alt="A Group of Developers Meeting Together">
+
+
+            <div class="NaughtyDogContent">
+                <h1 class="subheaders"> Naughty Dog </h1>
+                <p class="subcontent">
+                    A flagship first-party studio inside PlayStation Studios
+                    and is one of the greatest video game development company
+                    in the industry. Naughty Dog is responsible for some of the
+                    most critically acclaimed and commercially successful games
+                    on Sony's PlayStation platforms, from the original Crash
+                    Bandicoot and Jak and Daxter series to modern franchises
+                    like Uncharted and The Last of Us.
+                </p>
+
+                <p class="subcontent">
+                    Naughty Dog has garnered hundreds of industry and media
+                    awards and also gained a passionate fan base of millions of
+                    players around the globe for their use of cutting-edge
+                    technology and evocative, character-driven storytelling
+                    developments in their creations.
+                </p>
+            </div>
+        </div>
+
+        <div class="divContent">
+            <h1> Naughty List's Choices </h1>
+        </div>
+
+        <div class="divNaughtyList">
+
+            <div id="Game_TLOU1">
+                <div>
+                    <img class="GameCharImg" src="/IMG/Homepage/Char_TLOU1.png" alt="Last of Us Character">
+                </div>
+
+                <div class="GameDets">
+                    <h1 class="titleGameList"> The Last Of Us </h1>
+                    <p class="contentGameList">
+                        Set in the post-apocalyptic
+                        United States and tells the story of the survivors,
+                        Joel and Ellie, as they attempt to survive their
+                        westward journey across what remains of the country in
+                        search of a possible cure for the contemporary fungal
+                        epidemic that has nearly wiped-out humanity.
                     </p>
 
-                    <br>
-                    <a href="" class="button">More About Us</a>
+                    <a href="/HTML/TLOU1.html" class="aboutGame"> Read More about this Game </a>
                 </div>
             </div>
 
-            <div class="divNaughtyDog">
-                <div class="NaughtyDogImage">
-                    <img id="NDImg" src="../IMG/NaughtyDogImg.png" alt="A Group of Developers Meeting Together">
+            <div id="Game_TLOU2">
+                <div>
+                    <img class="GameCharImg" src="/IMG/Homepage/Char_TLOU2.png" alt="Last of Us Character">
                 </div>
 
-                <div class="NaughtyDogContent">
-                    <h1 class = "subheaders"> Naughty Dog </h1>
-                    <p class = "subcontent">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-                        elit, sed do eiusmod tempor incididunt ut labore et <br>
-                        dolore magna aliqua. Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit, sed do eiusmod tempor <br>
-                        incididunt ut labore et dolore magna aliqua. 
+                <div class="GameDets">
+                    <h1 class="titleGameList"> The Last Of Us </h1>
+                    <p class="contentGameList">
+                        Ellie and Joel have settled in Jackson, Wyoming, five years
+                        after their journey in the post-apocalyptic United States.
+                        Despite the continual threat of the infected and other,
+                        more desperate survivors, living amid a thriving community
+                        of survivors has provided them with tranquility and stability.
+                        When a horrific occurrence interrupts the peace, Ellie sets
+                        out on a never-ending quest for justice and closure.
                     </p>
 
-                    <p class = "subcontent">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-                        elit, sed do eiusmod tempor incididunt ut labore et <br>
-                        dolore magna aliqua. Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit, sed do eiusmod tempor <br>
-                        incididunt ut labore et dolore magna aliqua. 
+                    <a href="/HTML/TLOU2.html" class="aboutGame"> Read More about this Game </a>
+                </div>
+            </div>
+
+            <div id="Game_Uncharted4">
+                <div>
+                    <img class="GameCharImg" src="/IMG/Homepage/Char_Uncharted4.png" alt="Last of Us Character">
+                </div>
+
+                <div class="GameDets">
+                    <h1 class="titleGameList"> Uncharted 4 </h1>
+                    <h2 class="subTitleGameList"> THIEF'S END </h2>
+                    <p class="contentGameList">
+                        Nathan Drake, now a retired fortune hunter, still feels the
+                        overwhelming lure of adventure.
+                        As he reunites with his long-lost brother, Samuel, promise of an
+                        unforgettable experience and undiscovered riches, it doesn’t take
+                        much to convince Nathan to pack his bags and set off to find the
+                        pirate utopia of Libertalia.
                     </p>
+
+                    <a href="/HTML/U4TE.html" class="aboutGame"> Read More about this Game </a>
                 </div>
             </div>
 
-            <div class="divContent">
-                <h1> Naughty List's Choices </h1>
-            </div>
-            
-            <div class="divNaughtyList">
-
-                <div id="Game_TLOU1">
-                    <div class="GameChars"> 
-                        <img class="GameCharImg" src="../IMG/Char_TLOU1.png" alt="Last of Us Character">
-                    </div>
-
-                    <div class="GameDets">
-                        <h1 class ="titleGameList"> The Last Of Us </h1>
-                        <p class ="contentGameList">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <a href="GameOne.html" class="aboutGame"> Read More about this Game </a>
-                    </div>
+            <div id="Game_Uncharted3">
+                <div>
+                    <img class="GameCharImg" src="/IMG/Homepage/Char_Uncharted3.png" alt="Last of Us Character">
                 </div>
 
-                <div id="Game_TLOU2">
-                    <div class="GameChars"> 
-                        <img class="GameCharImg" src="../IMG/Char_TLOU2.png" alt="Last of Us Character">
-                    </div>
-
-                    <div class="GameDets">
-                        <h1 class ="titleGameList"> The Last Of Us </h1>
-                        <p class ="contentGameList">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <a href="" class="aboutGame"> Read More about this Game </a>
-                    </div>
-                </div>
-
-                <div id="Game_Uncharted4">
-                    <div class="GameChars"> 
-                        <img class="GameCharImg" src="../IMG/Char_Uncharted4.png" alt="Last of Us Character">
-                    </div>
-
-                    <div class="GameDets">
-                        <h1 class ="titleGameList"> Uncharted 4 </h1>
-                        <h2 class ="subTitleGameList"> THIEF'S END </h2>
-                        <p class ="contentGameList">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <a href="" class="aboutGame"> Read More about this Game </a>
-                    </div>
-                </div>
-
-                <div id="Game_Uncharted3">
-                    <div class="GameChars"> 
-                        <img class="GameCharImg" src="../IMG/Char_Uncharted3.png" alt="Last of Us Character">
-                    </div>
-
-                    <div class="GameDets">
-                        <h1 class ="titleGameList"> Uncharted 3 </h1>
-                        <h2 class ="subTitleGameList"> DRAKE'S DECEPTION </h2>
-                        <p class ="contentGameList">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <a href="" class="aboutGame"> Read More about this Game </a>
-                    </div>
-                </div>
-
-                <div id="Game_Uncharted2">
-                    <div class="GameChars"> 
-                        <img class="GameCharImg" src="../IMG/Char_Uncharted2.png" alt="Last of Us Character">
-                    </div>
-
-                    <div class="GameDets">
-                        <h1 class ="titleGameList"> Uncharted 2 </h1>
-                        <h2 class ="subTitleGameList"> AMONG THIEVES </h2>
-                        <p class ="contentGameList">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
-
-                        <a href="" class="aboutGame"> Read More about this Game </a>
-                    </div>
-                </div>
-
-
-            </div>
-        </main>
-
-        <footer>
-            <div id="divFooterTop">
-                <img src="../IMG/Logo_Black.png" alt="logo" id="footerlogo">
-                <div id="social-Media-Logo">
-                   <a href="#"> <img src="../IMG/facebook.png" alt="Facebook logo" style="width: 60px;"></a>
-                   <a href="#"> <img src="../IMG/twitter.png" alt="Twitter logo" style="width: 60px;"></a>
-                   <a href="#"> <img src="../IMG/instagram.png" alt="Instagram logo" style="width: 60px;"></a>
+                <div class="GameDets">
+                    <h1 class="titleGameList"> Uncharted 3 </h1>
+                    <h2 class="subTitleGameList"> DRAKE'S DECEPTION </h2>
+                    <p class="contentGameList">
+                        Set two years after, Among Thieves, Nathan Drake and his mentor
+                        Victor Sullivan tries to find the legendary Atlantis of the Sands,
+                        a lost city. While venturing their way to find the lost city,
+                        they were confronted by a mercenary group led by Sullivan’s
+                        former employer, Katherine Marlow.
+                    </p>
+                    
+                    <a href="/HTML/U3DD.html" class="aboutGame"> Read More about this Game </a>
                 </div>
             </div>
 
-            <div id="divFooterBottom">
-                <h2>THE NAUGHTY LIST</h2>
-                <p>&copy; <strong> 2022 </strong> Group 2 - INF202 | Bucala, Carino, De Leon, Mohammed, Tapay & Taylaran</p>
-            </div>
-        </footer>
+            <div id="Game_Uncharted2">
+                <div>
+                    <img class="GameCharImg" src="/IMG/Homepage/Char_Uncharted2.png" alt="Last of Us Character">
+                </div>
 
-    </body>
+                <div class="GameDets">
+                    <h1 class="titleGameList"> Uncharted 2 </h1>
+                    <h2 class="subTitleGameList"> AMONG THIEVES </h2>
+                    <p class="contentGameList">
+                        Set two years after the events of Drake's Fortune, Among Thieves
+                        follows Nathan Drake and Chloe Frazer as they race against Serbian
+                        war criminal Zoran Lazarevic and his army of mercenaries to find
+                        the entrance to the lost city of Shambhala and the famous
+                        Cintamani Stone.
+                    </p>
+
+                    <a href="/HTML/U2AT.html" class="aboutGame"> Read More about this Game </a>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="divFooterTop">
+            <a href="/HTML/Homepage.html">
+                <img src="/IMG/Header and footer/Logo_Black.png" alt="logo" id="footerlogo"></a>
+            <div id="social-Media-Logo">
+                <a href="#"> <img src="/IMG/Header and footer/facebook.png" alt="Facebook logo"
+                        style="width: 60px;"></a>
+                <a href="#"> <img src="/IMG/Header and footer/twitter.png" alt="Twitter logo"
+                        style="width: 60px;"></a>
+                <a href="#"> <img src="/IMG/Header and footer/instagram.png" alt="Instagram logo"
+                        style="width: 60px;"></a>
+            </div>
+        </div>
+
+        <div id="divFooterBottom">
+            <h2>THE NAUGHTY LIST</h2>
+            <p>&copy; <strong> 2022 </strong> Group 2 - INF202 | Bucala, Carino, De Leon, Mohammed, Tapay & Taylaran</p>
+        </div>
+    </footer>
+
+</body>
 
 </html>
