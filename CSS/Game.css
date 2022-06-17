@@ -112,15 +112,18 @@ nav ul ul li {
 
 .hero-image {
   box-sizing: border-box;
-  box-shadow: inset 0px -45px 50px 2px #181619;
+  box-shadow: inset 0px -60px 50px 10px #181619;
 
-  height: 90vh;
+  height: 100vh;
   width: 100%;
+
+  margin-bottom: 50px;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 #hero-image-TLOU1 {
   position: relative;
@@ -216,12 +219,12 @@ nav ul ul li {
   flex-wrap: nowrap;
 
   flex-direction: column;
-  padding: 0 8% 30px 8%;
+  padding: 0 8% 30px 7%;
 
   gap: 15px;
 }
 
-
+/* Text Classes */
 .title {
   text-align: left;
   color: #ED392C;
@@ -229,6 +232,9 @@ nav ul ul li {
   font-weight: 900;
   padding: 0;
   margin: 0;
+  padding: 0;
+
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
@@ -239,11 +245,19 @@ nav ul ul li {
   padding: 0;
   margin: -0.2em 0 10px 0;
 
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: 0.01em;
 }
 
 p {
   font-size: 25px;
   font-weight: 300;
+
+  margin: 20px 0;
+  line-height: 1.5em;
+  
   text-align: justify;
 }
 
@@ -265,7 +279,7 @@ p {
 #characters{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .char-content {
@@ -282,7 +296,7 @@ p {
 
 .char-pic {
   width: clamp(150px, 200px, 30%);
-  height: 25vh;
+  height: 26vh;
   object-fit: cover;
 
   float: left;
@@ -291,7 +305,7 @@ p {
   padding: 0;
   margin-right: 30px;
 
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .char-name {
@@ -307,16 +321,20 @@ p {
   font-weight: 400;
   font-size: 1em;
   text-align: justify;
+  line-height: 140%;
 
   margin: 0 0 15px 0;
   padding: 0;
 }
 
+
 #awards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 
+  margin: 0;
+  padding: 0;
 }
 
 .awards-title {
@@ -328,8 +346,8 @@ p {
   background-color: white;
   border-radius: 15px;
   margin: 10px;
-  width: 30vw;
-  padding: 30px 45px 25px 45px;
+  width: clamp(300px, 36vw, 50%);
+  padding: 30px;
 }
 
 .awards-title {
@@ -342,21 +360,23 @@ p {
 .awards-desc {
   color: #181619;
   font-weight: 400;
+
+  margin: 10px 0 0 0;
 }
 
 .GamePlayContainer {
   margin-top: 30px;
   justify-content: center;
   align-items: center;
+
+  margin: 30px 0 15px 0;
 }
 
 
 .Gyou {
   text-align: left;
   margin: 0;
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  margin-top: 5px;
+  font-size: 2.2em;
 
 }
 
@@ -370,8 +390,9 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: repeat(200px);
   grid-gap: 25px;
+
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin: 20px 0;
 }
 
 .GridCont img {
@@ -388,10 +409,6 @@ p {
 
 .pics img{
   border: white 2px solid;
-}
-
-.Secondary {
-  margin: 30px 0;
 }
 
 .lightbox {

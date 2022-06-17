@@ -185,6 +185,7 @@ nav ul ul li{
     width: 300px;
     background-color: white;
     padding: 30px;
+    margin-bottom: -30px;
 }
 
 a{
