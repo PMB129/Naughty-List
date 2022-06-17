@@ -1,5 +1,4 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #181619;
@@ -8,7 +7,7 @@ body{
 }
 
 /*Header & Nav*/
-header{
+header {
     margin: 0;
     width: 100%;
     background-color: #181619;
@@ -17,14 +16,14 @@ header{
 }
 
 /*To prevent header text to disappear*/
-header::after{
+header::after {
     content: ' ';
     display: table;
     clear: both;
 }
 
 /*ID for Header Logo Img*/
-#headerlogo{
+#headerlogo {
     float: left;
 
     margin-left: 30px;
@@ -34,7 +33,7 @@ header::after{
 }
 
 /*All nav content*/
-nav{
+nav {
     font-weight: 300;
     float: right;
     margin-right: 80px;
@@ -42,7 +41,7 @@ nav{
     display: flex;
 }
 
-nav ul{
+nav ul {
     background-color: #181619;
     margin: 0;
     padding: 0;
@@ -50,36 +49,36 @@ nav ul{
     list-style: none;
 }
 
-nav li{
+nav li {
     position: relative;
     display: inline-block;
     padding: 23px;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     color: white;
     line-height: 60px;
     text-decoration: none;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background-color: #ED392C;
 }
 
-nav ul ul{
+nav ul ul {
     position: absolute;
     display: none;
-    top: clamp(105px, 20% ,110px);
+    top: clamp(105px, 20%, 110px);
     left: 0;
 }
 
-nav ul li:hover > ul{
+nav ul li:hover>ul {
     display: block;
     z-index: 999;
 }
 
-nav ul ul li{
+nav ul ul li {
     width: 180px;
     float: none;
     display: list-item;
@@ -91,12 +90,12 @@ nav ul ul li{
 }
 
 /* PhotoBanner */
-.hero-image{
+.hero-image {
     position: relative;
-    background-image: url("/IMG/Contact Us/ContactHero.png");
-    
+    background-image: url("../IMG/Contact Us/ContactHero.png");
+
     box-sizing: border-box;
-    box-shadow: inset 0px -75px 50px 2px #181619;    
+    box-shadow: inset 0px -75px 50px 2px #181619;
 
     height: 75vh;
     width: 100%;
@@ -136,22 +135,22 @@ nav ul ul li{
 }
 
 /* Main Content */
-.divContent{
-    margin: 40px 0;
+.divContent {
+    margin: 40px 0 200px 0;
 }
 
-.title-Creator{
+.title-Creator {
     color: #ED392C;
 
     font-size: 4.3em;
     font-weight: 800px;
     letter-spacing: -0.03em;
-    
+
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
-.subtitle-Creator{
+.subtitle-Creator {
     font-size: 2.7em;
     font-weight: 300;
     letter-spacing: 0.01em;
@@ -172,7 +171,7 @@ nav ul ul li{
 .contact-lists {
     display: flex;
     flex-wrap: wrap;
-    
+
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -181,22 +180,101 @@ nav ul ul li{
     gap: 30px;
 }
 
+.contact-lists2 {
+    position: relative;
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin:30px 11.6%;
+}
+
+
 .contacts{
     width: 300px;
     background-color: white;
     padding: 30px;
-    margin-bottom: -30px;
+    margin-bottom: 30px;
 }
 
-a{
+.contact-lists2 .card .contacts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.contact-lists2 .card .contacts2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ED392C;
+    padding: 30px;
+    width: 300px;
+    
+}
+
+.contact-lists2 .card .contacts2 ul{
+    list-style: none;
+}
+
+.contact-lists2 .card .slide {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.contact-lists2 .card .slide.slide1 {
+    position: relative;
+    z-index: 1;
+    transition: .7s;
+    /* transform: translateY(50%); */
+}
+
+.contact-lists2 .card:hover .slide.slide1 {
+    transform: translateY(0px);
+}
+
+.contact-lists2 .card .slide.slide2 {
+    position: relative;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100%);
+}
+
+.contact-lists2 .card:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.contact-lists2 .card .slide.slide2 .contacts2 a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-lists2 .card .slide.slide2 .contacts2 a:hover {
+    font-size: 25px;
+    color: #181619;
+}
+
+a {
     text-decoration: none;
 }
 
-.socmedLogo{
+.socmedLogo {
     width: 65px;
 }
 
-.socmed{
+.socmed {
     margin: 0;
     padding: 0;
     color: #ED392C;
@@ -206,7 +284,7 @@ a{
     letter-spacing: -0.03em;
 }
 
-.contact-det{
+.contact-det {
     margin: 0;
     color: #222222;
 
@@ -216,7 +294,7 @@ a{
 }
 
 /*footer logo size and display*/
-#footerlogo{
+#footerlogo {
     float: left;
     width: 346.75px;
     height: 82px;
@@ -224,7 +302,7 @@ a{
     padding: 10px 42px;
 }
 
-#social-Media-Logo{
+#social-Media-Logo {
     padding: 80px;
 
     display: flex;
@@ -234,12 +312,13 @@ a{
 }
 
 /*footer white div*/
-#divFooterTop{
+#divFooterTop {
     clear: both;
     background-color: white;
     color: #181619;
     width: 100%;
-    height: 141.16px;;
+    height: 141.16px;
+    ;
 
     margin-top: 50px;
 
@@ -249,19 +328,19 @@ a{
 }
 
 /*footer black div*/
-#divFooterBottom{
+#divFooterBottom {
     display: block;
 
     margin: 0 0 30px 100px;
     height: 50px;
 }
 
-footer h2{
+footer h2 {
     font-size: 23.78px;
     margin-bottom: 0;
 }
 
-footer p{
+footer p {
     font-size: 17.56px;
     margin-top: 0;
 }

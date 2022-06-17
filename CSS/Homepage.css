@@ -129,7 +129,7 @@ p {
 
 /* Hero Image and Content */
 .hero-image {
-    background-image: url("/IMG/Homepage/HomepageHero.png");
+    background-image: url("../IMG/Homepage/HomepageHero.png");
     box-sizing: border-box;
     box-shadow: inset 0px -75px 50px 2px #181619;
 
@@ -283,7 +283,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("/IMG/Homepage/BG_TLOU1.png");
+    background-image: url("../IMG/Homepage/BG_TLOU1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -301,7 +301,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("/IMG/Homepage/BG_TLOU2.png");
+    background-image: url("../IMG/Homepage/BG_TLOU2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -319,7 +319,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("/IMG/Homepage/BG_Uncharted4.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -337,7 +337,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("/IMG/Homepage/BG_Uncharted3.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -355,7 +355,7 @@ p {
 
     border-radius: 20px;
 
-    background-image: url("/IMG/Homepage/BG_Uncharted2.png");
+    background-image: url("../IMG/Homepage/BG_Uncharted2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

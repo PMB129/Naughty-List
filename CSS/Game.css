@@ -11,11 +11,11 @@ body {
 }
 
 :root {
-  --TLOU1: url("/IMG/The Last Of us/TLOU_Photobanner.png");
-  --TLOU2: url("/IMG/The Last Of us II/TLOU2_Photobanner.png");
-  --U4: url("/IMG/Uncharted 4/U4ATE.png");
-  --U3: url("/IMG/Uncharted 3/U3DD.png");
-  --U2: url("/IMG/Uncharted 2/U2AT.png");
+  --TLOU1: url("../IMG/The Last Of Us/TLOU_Photobanner.png");
+  --TLOU2: url("../IMG/The Last Of Us II/TLOU2_Photobanner.png");
+  --U4: url("../IMG/Uncharted 4/U4ATE.png");
+  --U3: url("../IMG/Uncharted 3/U3DD.png");
+  --U2: url("../IMG/Uncharted 2/U2AT.png");
 }
 
 /*Header & Nav*/
