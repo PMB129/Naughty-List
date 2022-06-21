@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -660,15 +665,19 @@ footer p {
 
 @media (max-width: 800px) {
   .hero-content {
-    top: 10%;
+    top: 20%;
+  }
+
+  .hero-image {
+    height: 500px;
   }
 
   #title-Photobanner-TLOU {
-    font-size: 4.8em;
+    font-size: 3.5em;
   }
 
   #detail {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .title {
@@ -684,8 +693,9 @@ footer p {
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
+
 
   .GridCont {
     display: grid;
@@ -695,5 +705,88 @@ footer p {
 
     box-sizing: border-box;
     margin: 20px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    font-size: 2em;
+    margin-right: 30px;
+  }
+
+  .char-desc {
+    font-size: 0.9em;
+  }
+
+  #headerlogo {
+    width: clamp(200px, 50%, 275px);
+    margin-left: -10px;
+    padding-left: 0;
+  }
+
+  #footerlogo {
+    width: clamp(200px, 50%, 275px);
+    height: auto;
+    padding-left: 30px;
+  }
+
+  #social-Media-Logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-content {
+    top: 10%;
+  }
+
+  .hero-image {
+    height: 600px;
+  }
+
+  .char-pic {
+    height: 50vw;
+    margin: 0 25%;
+  }
+
+  .char-name {
+    text-align: center;
+  }
+
+  .char-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px auto;
+  }
+
+  .lightbox img {
+    margin: 50% auto;
+    height: auto;
+    width: 100%;
+  }
+
+  #divFooterTop {
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-rows: 100px 30px;
+  }
+
+  #footerlogo {
+    padding: 0 80%;
+  }
+
+  #social-Media-Logo {
+    margin: 0 80% 30px 80%;
+  }
+
+  /*footer black div*/
+  #divFooterBottom {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+    margin-top: 0;
   }
 }

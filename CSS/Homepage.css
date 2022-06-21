@@ -1,3 +1,7 @@
+html,body{
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -151,7 +155,9 @@ input[type=checkbox] {
         
     }
     
-    input[type=checkbox]:checked~.menu {
+
+    
+    input[type=checkbox]:checked ~ .menu {
         display: none;
         margin-bottom: -50px;
         padding: 0;
@@ -683,8 +689,20 @@ footer p {
 }
 
 @media (max-width: 700px) {
+    .hamburger {
+        font-size: 2em;
+        margin-right: 30px;
+    }
+
+    #headerlogo{
+        width: clamp(200px, 50%, 275px);
+        margin-left: -10px;
+        padding-left: 0;
+
+    }
+
     .hero-image {
-        height: 75vh;
+        height: 600px;
         width: 100%;
     }
 
@@ -827,17 +845,14 @@ footer p {
 
     /*footer logo size and display*/
     #footerlogo {
-        margin-left: 0;
+        width: clamp(200px, 50%, 275px);
+        height: auto;
+        padding-left: 30px;
     }
-
+    
     #social-Media-Logo {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 1px;
-
-        padding: 80px 5% 80px 0;
-        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 
     /*footer black div*/
@@ -850,6 +865,31 @@ footer p {
     }
 
     footer p {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:450px) {
+    #divFooterTop{
+        display: grid;
+        grid-template-columns: 30%;
+        grid-template-rows: 100px 30px;
+    }
+
+    #footerlogo{
+        padding:0 80%;
+    }
+    
+    #social-Media-Logo {
+        margin:0 80% 30px 80%;
+    }
+     /*footer black div*/
+     #divFooterBottom {
+        text-align: center;
+
+    }
+    footer p {
+        text-align: center;
         margin-top: 0;
     }
 }
