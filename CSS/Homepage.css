@@ -33,14 +33,6 @@ header::after {
 }
 
 /*All nav content*/
-/* nav {
-    font-weight: 300;
-    float: right;
-    margin-right: 80px;
-
-    display: flex;
-    flex-direction: row;
-} */
 
 .menu {
     font-weight: 300;
@@ -75,12 +67,12 @@ nav ul li:hover {
     background-color: #ED392C;
 }
 
-/* nav ul ul {
+nav ul ul {
     position: absolute;
     display: none;
     top: clamp(105px, 20%, 110px);
     left: 0;
-} */
+}
 
 .submenu {
 
@@ -91,7 +83,7 @@ nav ul li:hover {
     white-space: nowrap;
 }
 
-nav ul li:hover>ul {
+nav ul li:hover>ul, nav ul li:active>ul{
     display: block;
     z-index: 999;
 }
@@ -105,6 +97,72 @@ nav ul ul li {
     padding: 0;
     text-align: center;
     font-size: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 50px;
+    user-select: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    header {
+        position: relative;
+        padding: 1.5em 2em;
+    }
+    #headerlogo{
+        margin-left: -5px;
+    }
+    .menu {
+        text-align: center;
+        flex-flow: column;
+        position: absolute;
+        top: 7em;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li:hover {
+        background-color: #181619;
+    }
+    nav ul a:hover{
+        color: #ED392C;
+    }
+
+    .menu>li>a {
+        font-size: 1.5rem;
+    }
+    .submenu>li>a {
+        font-size: 1.5rem;
+    }
+    .submenu li {
+        width: 100%;
+        text-align: center;
+    }
+    .submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+    
+    input[type=checkbox]:checked~.menu {
+        display: none;
+        margin-bottom: -50px;
+        padding: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        right: 15%;
+        top: 30%;
+    }
 }
 
 /*div in main*/
@@ -408,4 +466,390 @@ footer h2 {
 footer p {
     font-size: 17.56px;
     margin-top: 0;
+}
+
+@media (max-width: 1300px) {
+
+    .NaughtyDogContent {
+        width: 85%;
+    }
+
+    .subheaders {
+        text-align: center;
+    }
+
+    #list-title {
+        width: 85%;
+        text-align: center;
+    }
+
+    .GameCharImg {
+        width: auto;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        transform: translateY(3.5%);
+    }
+
+    .GameDets {
+        width: 50%;
+    }
+
+    .titleGameList {
+        font-size: 3.5em;
+    }
+
+    .subTitleGameList {
+        font-size: 1.8em;
+    }
+
+    .contentGameList {
+        font-size: 1.2em;
+    }
+
+    #Game_TLOU1 {
+        width: 90%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+
+    #Game_TLOU2 {
+        width: 90%;
+        height: 30%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+
+    #Game_Uncharted4 {
+        width: 90%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+
+    #Game_Uncharted3 {
+        width: 90%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+
+    #Game_Uncharted2 {
+        width: 90%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .divContent {
+        padding: 0;
+        margin: 20px;
+    }
+
+    .subheaders {
+        font-size: 3em;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .subcontent {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+
+    #list-title {
+        width: 100%;
+        font-size: 3em;
+        margin: 3% 0;
+        text-align: center;
+    }
+
+    #Game_TLOU1 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_TLOU2 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted4 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted3 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted2 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    .GameCharImg {
+        width: auto;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+
+    .GameDets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+
+        margin: 0 0 30px 5px;
+    }
+
+    .titleGameList {
+        margin-top: 10px;
+        padding: 0;
+        font-size: 2.3em;
+    }
+
+    .subTitleGameList {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .contentGameList {
+        font-size: 1em;
+    }
+
+    .aboutGame {
+        width: fit-content;
+        font-size: 1em;
+    }
+
+    .GameDets p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    /*footer logo size and display*/
+    #footerlogo {
+        margin-left: 0;
+    }
+
+    #social-Media-Logo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1px;
+
+        padding: 80px 5% 80px 0;
+        margin: 0;
+    }
+
+    /*footer black div*/
+    #divFooterBottom {
+        display: block;
+
+        margin: 0 50px;
+        height: 50px;
+    }
+
+    footer h2 {
+        font-size: 23.78px;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        font-size: 17.56px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-image {
+        height: 75vh;
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content div {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 1em;
+        font-weight: 300;
+        padding: 15px 15px 20px 0;
+    }
+
+    .divContent {
+        padding: 0;
+        margin: 20px;
+    }
+
+    .subheaders {
+        font-size: 3em;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .subcontent {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+
+    #list-title {
+        width: 100%;
+        font-size: 3em;
+        margin: 3% 0;
+        text-align: center;
+    }
+
+    #Game_TLOU1 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_TLOU2 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted4 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted3 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    #Game_Uncharted2 {
+        width: 80vw;
+        height: 100%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+    }
+
+    .GameCharImg {
+        width: auto;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        left: 0;
+
+    }
+
+    .GameDets {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        margin: 0 0 30px 5px;
+    }
+
+    .titleGameList {
+        margin-top: 10px;
+        padding: 0;
+        font-size: 3em;
+    }
+
+    .subTitleGameList {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .contentGameList {
+        font-size: 1em;
+    }
+
+    .aboutGame {
+        width: fit-content;
+        font-size: 1em;
+    }
+
+    .GameDets p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    /*footer logo size and display*/
+    #footerlogo {
+        margin-left: 0;
+    }
+
+    #social-Media-Logo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1px;
+
+        padding: 80px 5% 80px 0;
+        margin: 0;
+    }
+
+    /*footer black div*/
+    #divFooterBottom {
+        margin: 0 50px;
+    }
+
+    footer h2 {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        margin-top: 0;
+    }
 }

@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #181619;
@@ -7,7 +7,7 @@ body{
 }
 
 /*Header & Nav*/
-header{
+header {
     margin: 0;
     width: 100%;
     background-color: #181619;
@@ -16,14 +16,14 @@ header{
 }
 
 /*To prevent header text to disappear*/
-header::after{
+header::after {
     content: ' ';
     display: table;
     clear: both;
 }
 
 /*ID for Header Logo Img*/
-#headerlogo{
+#headerlogo {
     float: left;
 
     margin-left: 30px;
@@ -33,15 +33,16 @@ header::after{
 }
 
 /*All nav content*/
-nav{
+
+.menu {
     font-weight: 300;
-    float: right;
     margin-right: 80px;
 
     display: flex;
+    flex-direction: row;
 }
 
-nav ul{
+nav ul {
     background-color: #181619;
     margin: 0;
     padding: 0;
@@ -49,36 +50,46 @@ nav ul{
     list-style: none;
 }
 
-nav li{
+nav li {
     position: relative;
     display: inline-block;
     padding: 23px;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     color: white;
     line-height: 60px;
     text-decoration: none;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background-color: #ED392C;
 }
 
-nav ul ul{
+nav ul ul {
     position: absolute;
     display: none;
-    top: clamp(105px, 20% ,110px);
+    top: clamp(105px, 20%, 110px);
     left: 0;
 }
 
-nav ul li:hover > ul{
+.submenu {
+
+    position: absolute;
+    display: none;
+    top: clamp(105px, 20%, 110px);
+    left: 0;
+    white-space: nowrap;
+}
+
+nav ul li:hover>ul,
+nav ul li:active>ul {
     display: block;
     z-index: 999;
 }
 
-nav ul ul li{
+nav ul ul li {
     width: 180px;
     float: none;
     display: list-item;
@@ -89,13 +100,86 @@ nav ul ul li{
     font-size: 20px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 50px;
+    user-select: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    header {
+        position: relative;
+        padding: 1.5em 2em;
+    }
+
+    #headerlogo {
+        margin-left: -5px;
+    }
+
+    .menu {
+        text-align: center;
+        flex-flow: column;
+        position: absolute;
+        top: 7em;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li:hover {
+        background-color: #181619;
+    }
+
+    nav ul a:hover {
+        color: #ED392C;
+    }
+
+    .menu>li>a {
+        font-size: 1.5rem;
+    }
+
+    .submenu>li>a {
+        font-size: 1.5rem;
+    }
+
+    .submenu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: none;
+        margin-bottom: -50px;
+        padding: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        right: 15%;
+        top: 30%;
+    }
+}
+
 /* PhotoBanner */
-.hero-image{
+.hero-image {
     position: relative;
     background-image: url("../IMG/About Us/AboutHero.png");
-    
+
     box-sizing: border-box;
-    box-shadow: inset 0px -75px 50px 2px #181619;    
+    box-shadow: inset 0px -75px 50px 2px #181619;
 
     height: 75vh;
     width: 100%;
@@ -134,12 +218,12 @@ nav ul ul li{
 }
 
 /* Main Content */
-.divContent{
+.divContent {
     display: block;
-    margin: 45px 0 0 0; 
+    margin: 45px 0 0 0;
 }
 
-.title-Creator{
+.title-Creator {
     text-align: center;
     color: #ED392C;
 
@@ -148,12 +232,12 @@ nav ul ul li{
     letter-spacing: -0.03em;
 
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
-.subtitle-Creator{
+.subtitle-Creator {
     text-align: center;
-   
+
     font-weight: 300;
     font-size: 39.8064px;
     letter-spacing: 0.01em;
@@ -162,28 +246,28 @@ nav ul ul li{
     margin: 0;
 }
 
-p{
+p {
     font-size: 22.7694px;
     font-weight: 300;
     text-align: justify;
-    
+
     line-height: 160%;
 }
 
-article{
+article {
     margin: 10px auto;
     width: 85%;
     text-align: center;
 }
 
-#companyPicture{
+#companyPicture {
     display: block;
     margin: 50px auto 50px auto;
     width: 85%;
     border-radius: 20px;
 }
 
-#creatorsGallery{
+#creatorsGallery {
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
     grid-template-rows: repeat(2, 550px);
@@ -197,7 +281,7 @@ article{
 }
 
 
-main div div img{
+main div div img {
     border-radius: 600px;
 
     background-position: center;
@@ -208,13 +292,13 @@ main div div img{
     margin: 0 0 30px 0;
 }
 
-main div div div{
+main div div div {
     margin: 0 30px 80px 30px;
     text-align: center;
 }
 
-.surname{
-    color:#ED392C;
+.surname {
+    color: #ED392C;
     font-size: 3.2em;
     font-weight: 800;
     padding: 0;
@@ -223,7 +307,7 @@ main div div div{
     letter-spacing: -0.03em;
 }
 
-.name{
+.name {
     margin: 0;
     padding: 0;
     font-size: 29px;
@@ -234,7 +318,7 @@ main div div div{
 
 
 /*footer logo size and display*/
-#footerlogo{
+#footerlogo {
     float: left;
     width: 346.75px;
     height: 82px;
@@ -242,7 +326,7 @@ main div div div{
     padding: 10px 42px;
 }
 
-#social-Media-Logo{
+#social-Media-Logo {
     padding: 40px 100px 40px 40px;
 
     display: inline-flex;
@@ -251,12 +335,13 @@ main div div div{
 }
 
 /*footer white div*/
-#divFooterTop{
+#divFooterTop {
     clear: both;
     background-color: white;
     color: #181619;
     width: 100%;
-    height: 141.16px;;
+    height: 141.16px;
+    ;
 
     display: flex;
     align-items: center;
@@ -264,17 +349,70 @@ main div div div{
 }
 
 /*footer black div*/
-#divFooterBottom{
+#divFooterBottom {
     margin: 0 0 30px 100px;
     height: 50px;
 }
 
-footer h2{
+footer h2 {
     font-size: 23.78px;
     margin-bottom: 0;
 }
 
-footer p{
+footer p {
     font-size: 17.56px;
     margin-top: 0;
+}
+
+@media (max-width:1200px) {
+    #creatorsGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 60px 80px 0 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    #creatorsGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 60px 80px 0 80px;
+    }
+
+    /*footer logo size and display*/
+    #footerlogo {
+        margin-left: 0;
+    }
+
+    #social-Media-Logo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1px;
+
+        padding: 80px 5% 80px 0;
+        margin: 0;
+    }
+
+    /*footer black div*/
+    #divFooterBottom {
+        margin: 0 50px;
+    }
+
+    footer h2 {
+        font-size: 23.78px;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        margin-top: 0;
+    }
+
 }
