@@ -125,6 +125,7 @@ nav ul ul li {
 
 input[type=checkbox] {
   display: none;
+  
 }
 
 @media (max-width: 1250px) {
@@ -752,6 +753,7 @@ footer p {
 
   .char-name {
     text-align: center;
+    margin: 1px 0 20px 0;
   }
 
   .char-content {
