@@ -238,6 +238,11 @@ p {
     text-decoration: none;
 }
 
+.button:hover, .button:active{
+    background-color: white;
+    color: #ED392C;
+}
+
 /* Naughty Dog Description */
 .divNaughtyDog {
     display: flex;
@@ -331,6 +336,11 @@ p {
     font-size: 23px;
     color: white;
     text-decoration: none;
+}
+
+.aboutGame:hover, .aboutGame:active{
+    background-color: white;
+    color: #ED392C;
 }
 
 /* Individual Game Cards */
